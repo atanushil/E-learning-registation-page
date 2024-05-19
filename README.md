@@ -1,4 +1,3 @@
-Sure, here's a possible GitHub README file for the provided HTML code:
 
 ---
 
@@ -24,7 +23,7 @@ This repository contains an HTML file implementing a registration form styled us
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/registration-form.git
+     git clone https://github.com/atanushil/E-learning-registation-page.git
    ```
 
 2. Open `index.html` in your preferred web browser.
