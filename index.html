@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration from</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            height: 100vh;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .btn {
+            background: linear-gradient(-45deg, #567c42, #8d3a5a, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            height: 100%;
+            border-radius: 8px;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .btn:hover {
+            background: linear-gradient(-45deg, #57d911, #60abae, #317994, #2b7261);
+
+        }
+    </style>
+</head>
+
+<body class="flex justify-center items-center">
+    <div class="w-[90vw] h-[93vh] mt-8 flex rounded-lg">
+        <div class="flex flex-1 border-2  bg-cover h-[100%] bg-white rounded-l-lg">
+            <img src="https://i.ibb.co/56N84dP/64cb996eb4288253b5c6cee9-Product-launch.png" alt="">
+        </div>
+        <div class="w-[40%] h-[100%] border-2 rounded-r-lg">
+            <h1 class="text-4xl flex items-center mt-2 justify-center mb-4">Registration</h1>
+            <h2 class="text-3xl flex items-center justify-center m-4">Elevate Your Learning Journey: Enroll Now!</h2>
+            <form action="" class="flex flex-col  pb-4  m-2  text-black mt-8 pt-4 items-center justify-center gap-4">
+                <div class="name flex m-3 w-[90%] text-xl">
+                    <div class="input-group">
+                        <label for="name" class="">First name</label>
+                        <input type="text" name="name" id="name" placeholder="Naruto" required class="border-2 text-[#57534e] focus:border-blue-500 focus:outline-none bg-[#cbd5e1] h-[35px] pl-2 rounded-md border-white w-[90%] h-[10
+                        %] mt-2">
+                    </div>
+                    <div>
+                        <label for="name">Middle name</label>
+                        <input type="text" name="name" id="name" class="border-2 focus:border-blue-500 focus:outline-none bg-[#cbd5e1] h-[35px] pl-2 rounded-md border-white w-[90%] h-[10
+                        %] mt-2">
+                    </div>
+                    <div>
+                        <label for="name">Last name</label>
+                        <input type="text" required name="name" placeholder="Uzumaki" id="name" class="border-2 focus:border-blue-500 focus:outline-none pl-2 bg-[#cbd5e1] h-[35px] rounded-md border-white w-[100%] h-[10
+                        %] mt-2">
+                    </div>
+                </div>
+                <div class="flex items-center  w-[90%] justify-between">
+                    <div class="dob flex w-[50%] items-center justify-center ">
+                        <label for="dob" class="w-[60%] items-center text-xl">Date of birth</label>
+                        <input type="date" name="dob" id="dob" required
+                            class="pl-2 bg-[#cbd5e1] h-[35px] items-center text-black focus:border-blue-500 focus:outline-none rounded-md border-white w-[90%] h-[10%] ">
+                    </div>
+                    <div class="gender text-black flex items-center justify-center">
+                        <label for="gender" class="text-black text-xl">Gender</label>
+                        <select id="gender" name="gender"
+                            class="ml-2 bg-[#cbd5e1] h-[35px] focus:outline-none focus:border-blue-500 rounded-lg"
+                            required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="email w-[90%] flex m-3 items-center">
+                    <label for="email" class="text-xl pr-3 px-4 py-2 bg-[#cbd5e1] rounded-l-lg">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required
+                        class="border border-gray-300 bg-[#f8fafc] px-4 py-2 rounded-r-lg focus:outline-none focus:border-blue-500 w-[100%]">
+
+                </div>
+                <div class="contact w-[90%] flex mb-3">
+                    <select id="countryCode" name="countryCode" required
+                        class="border w-[25%] rounded-l-lg border-gray-300 bg-[#cbd5e1]  px-2 py-2 focus:outline-none focus:border-blue-500">
+                        <option value="+1" name="us">United States (+1)</option>
+                        <option value="+44" name="uk">United Kingdom (+44)</option>
+                        <option value="+91" name="in">India (+91)</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <input type="number" id="mobileNumber" name="mobileNumber" placeholder="Enter your mobile number"
+                        required
+                        class="border border-gray-300 bg-[#f8fafc] px-4 py-2 rounded-r-lg focus:outline-none focus:border-blue-500 w-[75%]">
+                </div>
+                <div class="address w-[90%] items-center flex flex-col gap-4 mb-3">
+                    <div class="row-1 justify-between w-[100%] mb-3">
+                        <div class="street w-[100%] flex">
+                            <label for="street" class="text-xl pr-3 px-2 py-2 bg-[#cbd5e1] rounded-l-lg">Street
+                                Address</label>
+                            <input type="text" required name="street" id="street"
+                                placeholder="10/16 Saratpally,Dhandabag,"
+                                class="border border-gray-300 w-[75%] bg-[#f8fafc] px-4 py-2 rounded-r-lg focus:outline-none focus:border-blue-500 ">
+                        </div>
+                    </div>
+                    <div class="row-2 justify-between w-[100%] flex flex-row gap-4">
+                        <div class="state flex w-[60%]">
+                            <label for="city flex"
+                                class="border rounded-l-lg border-gray-300 bg-[#cbd5e1]  px-2 py-2 focus:outline-none focus:border-blue-500">State</label>
+                            <input type="text" name="state" placeholder="State" id="state" required
+                                class=" w-[80%] border border-gray-300 bg-[#f8fafc] px-4 py-2 rounded-r-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div class="pin flex">
+                            <label for="pin"
+                                class="border  rounded-l-lg border-gray-300 bg-[#cbd5e1]  px-2 py-2 focus:outline-none focus:border-blue-500">PIN</label>
+                            <input type="number" name="pin" placeholder="Postal number" id="pin" required
+                                class="border border-gray-300 bg-[#f8fafc] px-4 py-2 rounded-r-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                    </div>
+                </div>
+                <div class="parent flex w-[90%] flex-col gap-4">
+                    <div class="name flex w-[100%]">
+                        <label for="parent" class="text-xl pr-3 px-2 py-2 bg-[#cbd5e1] rounded-l
+                        -lg">Parent Full Name</label>
+                        <input type="text" name="parentName" id="parentName" placeholder="Minato Uzumaki" required
+                            class="border border-gray-300 bg-[#f8fafc] px-4 py-2 rounded-r-lg focus:outline-none focus:border-blue-500 w-[72%]">
+                    </div>
+                    <div class="contact w-[100%] flex ">
+                        <select id="p-countryCode" name="countryCode" required
+                            class="border w-[25%] rounded-l-lg border-gray-300 bg-[#cbd5e1]  px-2 py-2 focus:outline-none focus:border-blue-500">
+                            <option value="+1" name="us">United States (+1)</option>
+                            <option value="+44" name="uk">United Kingdom (+44)</option>
+                            <option value="+91" name="in">India (+91)</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                        <input type="number" id="parent-mobileNumber" name="mobileNumber"
+                            placeholder="Enter your mobile number" required
+                            class="border border-gray-300 bg-[#f8fafc] px-4 py-2 rounded-r-lg focus:outline-none focus:border-blue-500 w-[75%]">
+                    </div>
+                </div>
+                <div class="submit flex justify-between w-[90%]">
+                    <div class="course flex items-center ">
+                        <label for="course" class="text-xl border border-gray-300 p-1 rounded-l-md bg-[#cbd5e1]">Course
+                            name</label>
+                        <select name="course" id="course" required
+                            class="border  rounded-r-md border-white-300 bg-[#f8fafc]  p-1 text-xl focus:outline-none h-[38px]">
+                            >
+                            <option value="0">Select your course</option>
+                            <option value="B.Tech">Web Development</option>
+                            <option value="BBA">BBA</option>
+                            <option value="BCA">BCA</option>
+                        </select>
+                    </div>
+                    <div class="btn flex justify-between ">
+                        <button type="submit" class=" flex items-center justify-between px-6 p-1 rounded-lg ">
+                            <p class="text-xl p-1 self-start">Create an account</p>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
